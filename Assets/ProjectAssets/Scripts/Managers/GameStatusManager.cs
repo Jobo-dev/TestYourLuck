@@ -28,21 +28,36 @@ namespace Managers
         private Dictionary<GameStatus, GameSectionBaseController> gameSectionDictionary;
         private Action<GameStatus> OnGameStatusChanged;
 
+
         private void Awake()
         {
             if (instance == null)
                 instance = this;
             else
                 Destroy(gameObject);
+        }
 
-            foreach (GameSectionBaseController controller in gameSectionElementsList)
+        private void Start()
+        {
+            gameSectionDictionary = new Dictionary<GameStatus, GameSectionBaseController>();
+            if(gameSectionElementsList.Count != 0)
             {
-                gameSectionDictionary.Add(controller.gameStatus, controller);
-                Debug.Log($"Set controller {controller.GetType()} with " +
-                    $"the key {controller.gameStatus.ToString()}");
+                foreach (GameSectionBaseController controller in gameSectionElementsList)
+                {
+
+                    gameSectionDictionary.Add(controller.gameStatus, controller);
+                    Debug.Log($"Set controller {controller.GetType()} with " +
+                        $"the key {controller.gameStatus.ToString()}");
+                }
+            }
+            else
+            {
+                Debug.LogWarning($"{GetType()} Warning: The game selection elements list is empty");
+                
             }
 
-            OnGameStatusChanged += GameStatusChanged;
+
+                OnGameStatusChanged += GameStatusChanged;
         }
 
         internal void SetGameStatus(GameStatus status)
@@ -54,7 +69,7 @@ namespace Managers
 
         private void GameStatusChanged(GameStatus status)
         {
-            Debug.Log("Action called because a status changed");
+            Debug.Log($"Action called because a status changed. Key: {status.ToString()}");
             gameSectionDictionary[status].OnSectionActive?.Invoke();
         }
 

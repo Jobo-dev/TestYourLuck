@@ -12,13 +12,11 @@ public class MainMenuController : GameSectionBaseController
     
 
 
-    void Start()
+    void Awake()
     {
         gameStatus = GameStatus.MainMenu;
         base.Init();
         HideSection(false);
-
-
         startButton.onClick.AddListener(StartGame);
     }
 

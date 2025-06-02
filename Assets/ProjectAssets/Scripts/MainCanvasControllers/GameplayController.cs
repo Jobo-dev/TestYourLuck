@@ -6,11 +6,18 @@ public class GameplayController : GameSectionBaseController
 
     [SerializeField] Button pauseButton;
 
-    void Start()
+    void Awake()
     {
-        gameStatus = GameStatus.MainMenu;
+        this.gameStatus = GameStatus.Gameplay;
         base.Init();
+        HideSection(true);
+
+    }
+
+    protected override void ActivateSection()
+    {
         HideSection(false);
 
     }
+
 }

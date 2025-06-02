@@ -20,6 +20,8 @@ public class GameSectionBaseController : MonoBehaviour
     {
         gamestatusManager = GameStatusManager.instance;
         canvasGroup = GetComponent<CanvasGroup>();
+        OnSectionActive += ActivateSection;
+        OnSectionInactive += DeactivateSection;
     }
 
     protected void HideSection(bool hide)
