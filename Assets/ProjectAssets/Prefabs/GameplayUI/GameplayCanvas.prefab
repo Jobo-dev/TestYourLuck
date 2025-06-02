@@ -364,7 +364,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6023310730237253143}
   m_Layer: 0
-  m_Name: PauseButton
+  m_Name: PauseButtonContainer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -439,7 +439,7 @@ GameObject:
   - component: {fileID: 787419035703271076}
   - component: {fileID: 8089139550639663350}
   m_Layer: 0
-  m_Name: Button
+  m_Name: PauseButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -933,7 +933,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   canvasGroup: {fileID: 0}
-  pauseButton: {fileID: 0}
+  pauseButton: {fileID: 8089139550639663350}
 --- !u!1 &5557070838438026793
 GameObject:
   m_ObjectHideFlags: 0
