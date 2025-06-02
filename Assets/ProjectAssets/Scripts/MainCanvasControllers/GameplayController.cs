@@ -16,7 +16,13 @@ public class GameplayController : GameSectionBaseController
 
     protected override void ActivateSection()
     {
-        HideSection(false);
+        base.ActivateSection();
+
+    }
+
+    protected override void DeactivateSection()
+    {
+        base.ActivateSection();
 
     }
 

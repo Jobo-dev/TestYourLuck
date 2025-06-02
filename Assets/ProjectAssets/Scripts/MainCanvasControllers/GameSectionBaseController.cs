@@ -37,11 +37,13 @@ public class GameSectionBaseController : MonoBehaviour
     protected virtual void ActivateSection()
     {
         Debug.Log("Base ActivateSection method activated");
+        HideSection(false);
     }
 
     protected virtual void DeactivateSection()
     {
         Debug.Log("Base ActivateSection method activated");
+        HideSection(true);
     }
 
 }

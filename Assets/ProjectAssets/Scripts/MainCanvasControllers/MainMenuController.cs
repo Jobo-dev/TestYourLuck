@@ -27,4 +27,16 @@ public class MainMenuController : GameSectionBaseController
         ManagerVault.instance.gameStatusManager.SetGameStatus(GameStatus.Gameplay);
     }
 
+    protected override void ActivateSection()
+    {
+        base.ActivateSection();
+
+    }
+
+    protected override void DeactivateSection()
+    {
+        base.ActivateSection();
+
+    }
+
 }
