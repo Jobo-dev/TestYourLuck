@@ -30,9 +30,9 @@ Puedes utilizar fragmentos del código como referencia respetando la licencia or
 
 Si quieres saber más sobre el proyecto, colaborar o tienes preguntas, puedes encontrarme en:
 
-- GitHub: Joluh619
+- GitHub: Jobo-dev
 - Correo: jorgecj.dev@gmail.com
 
 ---
 
-© 2025 Joluh619. Todos los derechos reservados.
+© 2025 Jobo-dev. Todos los derechos reservados.
