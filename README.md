@@ -1,6 +1,6 @@
 # TestYourLuck
 
-Proyecto desarrollado en Unity como parte de mi portafolio personal. Este juego tiene como objetivo demostrar mis habilidades en desarrollo de videojuegos, diseño de mecánicas y organización de proyectos en Unity.
+Proyecto realizado en el motor Unity como parte de mi portafolio personal y que se mantiene en la etapa de desarrollo. Este juego tiene como objetivo demostrar mis habilidades en desarrollo de videojuegos, diseño de mecánicas y organización de proyectos en Unity.
 
 ## 🎮 Descripción
 
@@ -10,11 +10,7 @@ Videojuego en 2D que emula al juego televisivo "Deal or no Deal", donde el usuar
 
 - Unity 6000.0.36f1
 - C#
-- [Otros assets]
-
-## 📷 Capturas
-
-
+- DOTween
 
 ## ⚠️ Licencia y uso
 
